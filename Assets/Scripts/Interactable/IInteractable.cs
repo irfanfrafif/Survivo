@@ -1,14 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 namespace Potato {
-    public interface IInteractable {
-        void Interact();
-    }
 
-    public abstract class Interactable : MonoBehaviour, IInteractable {
+    public abstract class Interactable : MonoBehaviour {
 
-        public abstract void Interact();
+        private Action callback;
+
+        public void WaitForInteract(Action onPlayerArrived) {
+            callback = onPlayerArrived;
+            callback += Interact;
+        }
+
+        private void Interact() {
+            InteractLogic();
+            callback -= Interact;
+        }
+
+        protected abstract void InteractLogic();
+
     }
 }

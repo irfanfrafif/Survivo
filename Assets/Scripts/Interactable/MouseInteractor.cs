@@ -1,12 +1,10 @@
-using System;
 using UnityEngine;
 
 namespace Potato {
     public class MouseInteractor : MonoBehaviour {
 
         private Camera cam;
-        private bool clicked;
-        [SerializeField] private IsoMovement move;
+        [SerializeField] private PlayerMain player;
 
         private void Awake() {
             cam = Camera.main;
@@ -25,9 +23,9 @@ namespace Potato {
 
             if (hit.transform) {
                 var i = hit.transform.GetComponent<Interactable>();
-                if (i) { i.Interact(); }
+                if (i) { i.WaitForInteract(player.OnPlayerMoveArrived); }
             } else {
-                move.ClickGoHere(wpmp);
+                player.Move.ClickGoHere(wpmp);
             }
         }
 
