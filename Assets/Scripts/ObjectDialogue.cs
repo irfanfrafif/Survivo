@@ -5,7 +5,7 @@ using DialogueGraph.Runtime;
 using TMPro;
 using Potato;
 
-public class ObjectDialogue : Interactable,
+public class ObjectDialogue : Interactable
 {
     public enum Facing
     {
@@ -154,6 +154,6 @@ public class ObjectDialogue : Interactable,
 
     protected override void InteractLogic()
     {
-        throw new System.NotImplementedException();
+        StartConversation();
     }
 }
