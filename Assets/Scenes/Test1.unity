@@ -876,12 +876,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80c49c349eea4a6f9719386703f11e48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DlogObject: {fileID: 0}
-  CurrentAssetGuid: 
-  PersistentData: []
+  DlogObject: {fileID: -5475051401550479605, guid: 34d8e294a7a71ae408eb6140453cd02e, type: 3}
+  CurrentAssetGuid: 34d8e294a7a71ae408eb6140453cd02e
+  PersistentData:
+  - ActorDataIndices:
+      m_keys: []
+      m_values: 
+    ActorData: []
+    CheckDataIndices:
+      m_keys: []
+      m_values: 
+    CheckData: []
+    TriggerDataIndices:
+      m_keys: []
+      m_values: 
+    TriggerData: []
   PersistentDataIndices:
-    m_keys: []
-    m_values: 
+    m_keys:
+    - 34d8e294a7a71ae408eb6140453cd02e
+    m_values: 00000000
 --- !u!1 &751217550
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,6 +2115,8 @@ GameObject:
   - component: {fileID: 1841841630}
   - component: {fileID: 1841841629}
   - component: {fileID: 1841841628}
+  - component: {fileID: 1841841633}
+  - component: {fileID: 1841841632}
   m_Layer: 0
   m_Name: robot_0
   m_TagString: Untagged
@@ -2116,7 +2131,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841841627}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a42d9df8a6d4234d9123ddbae6dabb2, type: 3}
   m_Name: 
@@ -2128,7 +2143,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841841627}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83ca8038fee6bac488170dce9b691efe, type: 3}
   m_Name: 
@@ -2213,6 +2228,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1841841632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841841627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e965cf9132a48469df8789df139572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {fileID: 1841841633}
+--- !u!114 &1841841633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841841627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c04f09802d2e0149beae900f6b492b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSpeed: 1
+  movementGrid: {fileID: 1710293932}
+  tileGrid: {fileID: 1910683210}
+  baseZ: 1.51
+  invertNorth: 1
+  gridManager: {fileID: 287356149}
+  sprite: {fileID: 1841841630}
+  posX: {fileID: 21300000, guid: bf046234f6bce3445a5e435039694b62, type: 3}
+  posY: {fileID: 21300000, guid: 17aecaa53149c7f4680447011ab0ab13, type: 3}
+  negX: {fileID: 21300000, guid: 1dde5799f4a14c8429012a31021002bd, type: 3}
+  negY: {fileID: 21300000, guid: f66fd8b952ac72d4190ab74b7162355f, type: 3}
+  openingMachineUI: 0
+  facingDirection: 0
 --- !u!1 &1910683208
 GameObject:
   m_ObjectHideFlags: 0
