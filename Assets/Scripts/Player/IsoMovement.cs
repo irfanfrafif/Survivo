@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -63,6 +64,8 @@ namespace Potato {
         public FacingDirection facingDirection;
 
         private List<NodeBase> paths;
+
+        public Action OnArrived;
 
 
         //-------------------------------------------------------------------------------------------------
@@ -196,6 +199,8 @@ namespace Potato {
 
                     case MoveState.EndMoving:
                         MoveCharacter(moveState);
+
+                        OnArrived?.Invoke();
 
                         if (fractionTraveled >= 1) {
                             transform.position = currentWorldPos = moveWorldPos;
