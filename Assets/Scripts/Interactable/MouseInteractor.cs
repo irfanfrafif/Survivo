@@ -12,7 +12,6 @@ namespace Potato {
 
         private void Update() {
             if (Input.GetMouseButtonDown(0)) {
-                Debug.Log("click");
                 DoSomething();
             }
         }
