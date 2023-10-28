@@ -22,7 +22,7 @@ namespace Potato {
 
             if (hit.transform) {
                 var i = hit.transform.GetComponent<Interactable>();
-                if (i) { i.WaitForInteract(player.OnPlayerMoveArrived); }
+                if (i) { i.WaitForInteract(player.Move.OnArrived); }
             } else {
                 player.Move.ClickGoHere(wpmp);
             }
