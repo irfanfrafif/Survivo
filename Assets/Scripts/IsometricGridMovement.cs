@@ -94,7 +94,7 @@ public class IsometricGridMovement : MonoBehaviour
 
     float EaseOutQuad(float x)
     {
-        if (x >= 1) return 1;
+        if (x >= 0) return 1;
         return Mathf.Sin((x * Mathf.PI) / 2);
     }
 

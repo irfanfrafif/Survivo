@@ -239,6 +239,7 @@ namespace Potato {
 
         float EaseOut(float x) {
             x--;
+            if (x >= 1) return 1;
             return Mathf.Min(1, 1 - x * x);
         }
 

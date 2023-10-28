@@ -18,7 +18,7 @@ namespace Potato {
         }
 
         private void DoSomething() {
-            Vector3 wpmp = cam.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 wpmp = cam.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(wpmp, Vector2.zero);
 
             if (hit.transform) {
