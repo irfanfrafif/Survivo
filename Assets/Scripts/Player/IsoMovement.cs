@@ -200,11 +200,12 @@ namespace Potato {
                     case MoveState.EndMoving:
                         MoveCharacter(moveState);
 
-                        OnArrived?.Invoke();
 
                         if (fractionTraveled >= 1) {
                             transform.position = currentWorldPos = moveWorldPos;
                             moveState = MoveState.Idle;
+                            OnArrived?.Invoke();
+                            OnArrived = null;
 
                             if (openingMachineUI) {
                                 //ServiceLocator.Instance.uiManager.OpenUI();

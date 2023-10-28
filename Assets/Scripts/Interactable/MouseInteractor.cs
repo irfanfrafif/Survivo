@@ -25,7 +25,7 @@ namespace Potato {
             if (hit) {
                 var i = hit.transform.GetComponent<Interactable>();
                 if (i) {
-                    i.WaitForInteract(player.Move.OnArrived);
+                    player.Move.OnArrived += i.Interact;
                     var o = i as ObjectDialogue;
                     Debug.Log(o.GetFrontGrid());
                     if (o != null) { player.Move.GoHere((Vector3Int)o.GetFrontGrid()); }
