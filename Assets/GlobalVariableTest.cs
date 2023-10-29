@@ -17,10 +17,10 @@ public class GlobalVariableTest : MonoBehaviour
         set {
             isInDialogue = value;
 
-            const float zoomIn = 1.75f;
             const float zoomOut = 2.25f;
+            const float zoomIn = 1.75f;
 
-            StartCoroutine(CameraEase(0.5f, value ? zoomIn : zoomOut, value ? zoomOut : zoomIn));
+            StartCoroutine(CameraEase(0.5f, value ? zoomOut : zoomIn, value ? zoomIn : zoomOut));
 
 
         }
@@ -77,7 +77,8 @@ public class GlobalVariableTest : MonoBehaviour
         float t = 0;
         while (t <= 1) {
             t += Time.deltaTime / duration;
-            cam.m_Lens.OrthographicSize = Mathf.SmoothStep(t, from, to);
+            cam.m_Lens.OrthographicSize = Mathf.SmoothStep(from, to, t);
+            Debug.Log(t);
             yield return null;
         }
         yield break;
