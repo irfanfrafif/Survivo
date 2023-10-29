@@ -39,12 +39,12 @@ public class LineController : MonoBehaviour {
 
     private void Update() {
         if(!isActive) return;
-        if (Input.GetKeyDown(KeyCode.DownArrow)) {
+        if (Input.GetKeyDown(KeyCode.RightArrow)) {
             var nextIndex = Mathf.Min(selectedIndex + 1, entries.Count - 1);
             entries[selectedIndex].Select(false);
             entries[nextIndex].Select(true);
             selectedIndex = nextIndex;
-        } else if (Input.GetKeyDown(KeyCode.UpArrow)) {
+        } else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
             var nextIndex = Mathf.Max(selectedIndex - 1, 0);
             entries[selectedIndex].Select(false);
             entries[nextIndex].Select(true);

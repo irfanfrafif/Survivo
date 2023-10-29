@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using DG.Tweening;
+using TMPro;
 
 public class Day4Sequence : MonoBehaviour
 {
@@ -18,6 +21,12 @@ public class Day4Sequence : MonoBehaviour
 
     [SerializeField] private ObjectDialogue AIA;
     [SerializeField] private ObjectDialogue AIB;
+
+    [Header("Ending")]
+    [SerializeField] private Image fade;
+    [SerializeField] private TMP_Text endingHeader;
+    [SerializeField] private TMP_Text endingText;
+    [SerializeField] private TMP_Text titleScreen;
 
     public void SetTrueSeedPod(string node, int lineIndex) { seedPod = true; }
     public void SetTrueSerum(string node, int lineIndex) { serum = true; }
@@ -55,7 +64,24 @@ public class Day4Sequence : MonoBehaviour
 
     public void GoToNextScene(string node, int lineIndex)
     {
-        //
+        GlobalVariableTest.Instance.IsInDialogue = true;
+
+        SceneManager.LoadScene(5);
+    }
+
+    public void EndingA(string node, int lineIndex)
+    {
+        fade.gameObject.SetActive(true);
+        endingHeader.gameObject.SetActive(true);
+        endingText.gameObject.SetActive(true);
+        titleScreen.gameObject.SetActive(true);
+
+        Sequence startSequence = DOTween.Sequence();
+
+        startSequence.SetUpdate(true).Append(fade.DOFade(1f, 3f)).AppendInterval(1f).OnComplete(() => GlobalVariableTest.Instance.IsInDialogue = true)
+            .Append(endingHeader.DOFade(1f, 2f)).AppendInterval(0.5f)
+            .Append(endingText.DOFade(1f, 2f)).AppendInterval(0.5f)
+            .Append(titleScreen.DOFade(1f, 2f)).AppendInterval(0.5f);
     }
 
     IEnumerator AIACoroutine()

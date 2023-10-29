@@ -60,4 +60,9 @@ public class GlobalVariableTest : MonoBehaviour
     public void SetTrueChoice4B(string node, int lineIndex) { choice4B = true; }
     public bool CheckChoice4B(string node, int lineIndex) { return choice4B; }
 
+    public void ResetGlobalVariable()
+    {
+        choice1A = choice1B = choice2A = choice2B = false;
+    }
+
 }

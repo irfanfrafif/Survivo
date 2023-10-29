@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using DG.Tweening;
+using TMPro;
 
 public class Day5Sequence : MonoBehaviour
 {
@@ -18,6 +21,20 @@ public class Day5Sequence : MonoBehaviour
 
     [SerializeField] private ObjectDialogue AIA;
     [SerializeField] private ObjectDialogue AIB;
+
+    [Header("Ending General")]
+    [SerializeField] private Image fade;
+    [SerializeField] private TMP_Text titleScreen;
+
+    [Header("Ending B")]
+    
+    [SerializeField] private TMP_Text endingHeaderB;
+    [SerializeField] private TMP_Text endingTextB;
+    
+
+    [Header("Ending C")]
+    [SerializeField] private TMP_Text endingHeaderC;
+    [SerializeField] private TMP_Text endingTextC;
 
     public void SetTrueSeedPod(string node, int lineIndex) { seedPod = true; }
     public void SetTrueSerum(string node, int lineIndex) { serum = true; }
@@ -55,7 +72,43 @@ public class Day5Sequence : MonoBehaviour
 
     public void GoToNextScene(string node, int lineIndex)
     {
-        //
+        GlobalVariableTest.Instance.IsInDialogue = true;
+    }
+
+    public void EndingB(string node, int lineIndex)
+    {
+        GlobalVariableTest.Instance.IsInDialogue = true;
+
+        fade.gameObject.SetActive(true);
+        endingHeaderB.gameObject.SetActive(true);
+        endingTextB.gameObject.SetActive(true);
+        titleScreen.gameObject.SetActive(true);
+
+        Sequence startSequence = DOTween.Sequence();
+
+        startSequence.SetUpdate(true).Append(fade.DOFade(1f, 3f)).AppendInterval(1f).OnComplete(() => GlobalVariableTest.Instance.IsInDialogue = true)
+            .Append(endingHeaderB.DOFade(1f, 2f)).AppendInterval(0.5f)
+            .Append(endingTextB.DOFade(1f, 2f)).AppendInterval(0.5f)
+            .Append(titleScreen.DOFade(1f, 2f)).AppendInterval(0.5f);
+    }
+
+    public void EndingC(string node, int lineIndex)
+    {
+        GlobalVariableTest.Instance.IsInDialogue = true;
+
+        GlobalVariableTest.Instance.IsInDialogue = true;
+
+        fade.gameObject.SetActive(true);
+        endingHeaderC.gameObject.SetActive(true);
+        endingTextC.gameObject.SetActive(true);
+        titleScreen.gameObject.SetActive(true);
+
+        Sequence startSequence = DOTween.Sequence();
+
+        startSequence.SetUpdate(true).Append(fade.DOFade(1f, 3f)).AppendInterval(1f).OnComplete(() => GlobalVariableTest.Instance.IsInDialogue = true)
+            .Append(endingHeaderC.DOFade(1f, 2f)).AppendInterval(0.5f)
+            .Append(endingTextC.DOFade(1f, 2f)).AppendInterval(0.5f)
+            .Append(titleScreen.DOFade(1f, 2f)).AppendInterval(0.5f);
     }
 
     IEnumerator AIACoroutine()

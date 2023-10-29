@@ -39,6 +39,7 @@ public class Day1Sequence : MonoBehaviour
 
     private void Start()
     {
+        GlobalVariableTest.Instance.IsInDialogue = true;
         StartCoroutine(AIACoroutine());
     }
 
@@ -55,7 +56,8 @@ public class Day1Sequence : MonoBehaviour
 
     public void GoToNextScene(string node, int lineIndex)
     {
-        //
+        GlobalVariableTest.Instance.IsInDialogue = true;
+        SceneManager.LoadScene(2);
     }
 
     IEnumerator AIACoroutine()

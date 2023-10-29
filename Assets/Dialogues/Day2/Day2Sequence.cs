@@ -55,7 +55,8 @@ public class Day2Sequence : MonoBehaviour
 
     public void GoToNextScene(string node, int lineIndex)
     {
-        //
+        GlobalVariableTest.Instance.IsInDialogue = true;
+        SceneManager.LoadScene(3);
     }
 
     IEnumerator AIACoroutine()
