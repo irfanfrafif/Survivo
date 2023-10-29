@@ -15,8 +15,15 @@ public class GlobalVariableTest : MonoBehaviour
     public bool IsInDialogue
     {   get { return isInDialogue; } 
         set {
-            cam.m_Lens.OrthographicSize = value ? 1.75f : 2.25f;
-            isInDialogue = value; }
+            isInDialogue = value;
+
+            const float zoomIn = 1.75f;
+            const float zoomOut = 2.25f;
+
+            StartCoroutine(CameraEase(0.5f, value ? zoomIn : zoomOut, value ? zoomOut : zoomIn));
+
+
+        }
     }
 
     [SerializeField] private bool choice1A;
@@ -64,5 +71,17 @@ public class GlobalVariableTest : MonoBehaviour
     {
         choice1A = choice1B = choice2A = choice2B = false;
     }
+
+    public IEnumerator CameraEase(float duration, float from, float to) {
+
+        float t = 0;
+        while (t <= 1) {
+            t += Time.deltaTime / duration;
+            cam.m_Lens.OrthographicSize = Mathf.SmoothStep(t, from, to);
+            yield return null;
+        }
+        yield break;
+    }
+
 
 }
