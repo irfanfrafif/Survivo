@@ -24,13 +24,12 @@ public class ObjectDialogue : Interactable
     public RuntimeDialogueGraph DialogueSystem;
     public LineController LineController;
 
-    [Header("UI Reference")]
-    public GameObject SecondaryScreen;
-    public GameObject PlayerContainer;
-    public GameObject NpcContainer;
-    public TMP_Text PlayerText;
-    public TMP_Text NpcText;
-    public TMP_Text NpcName;
+    private GameObject SecondaryScreen;
+    private GameObject PlayerContainer;
+    private GameObject NpcContainer;
+    private RunningText PlayerText;
+    private RunningText NpcText;
+    private TMP_Text NpcName;
 
     private bool startConversation = false;
     private bool isInConversation = false;
@@ -47,7 +46,15 @@ public class ObjectDialogue : Interactable
     }
     private void Start()
     {
-        gridPos = ((Vector2Int)ServiceLocator.Instance.gridManager.movementGrid.WorldToCell(gameObject.transform.position));
+            SecondaryScreen = UIManager.Instance.SecondaryScreen;
+            PlayerContainer = UIManager.Instance.PlayerContainer;
+            NpcContainer = UIManager.Instance.NpcContainer;
+            PlayerText = UIManager.Instance.PlayerText;
+            NpcText = UIManager.Instance.NpcText;
+            NpcName = UIManager.Instance.NpcName;
+
+
+             gridPos = ((Vector2Int)ServiceLocator.Instance.gridManager.movementGrid.WorldToCell(gameObject.transform.position));
 
         switch (facing)
         {
@@ -104,7 +111,7 @@ public class ObjectDialogue : Interactable
         {
             (showPlayer ? PlayerContainer : NpcContainer).SetActive(true);
             (showPlayer ? PlayerText : NpcText).gameObject.SetActive(true);
-            (showPlayer ? PlayerText : NpcText).text = textToShow;
+            (showPlayer ? PlayerText : NpcText).SetDialogue(textToShow);
             showingText = true;
             shouldShowText = false;
         }

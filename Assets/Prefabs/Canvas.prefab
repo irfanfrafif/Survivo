@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 2424627621334670922}
   - component: {fileID: 2424627621334670923}
   - component: {fileID: 2424627621334670920}
+  - component: {fileID: 2404576193557678599}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -379,6 +380,24 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2404576193557678599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424627621334670921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed493dea29824d4abb4af30762204c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SecondaryScreen: {fileID: 2424627621413513529}
+  PlayerContainer: {fileID: 2424627621983128303}
+  NpcContainer: {fileID: 2424627622249998772}
+  PlayerText: {fileID: 5262912779721105600}
+  NpcText: {fileID: 5100767272440326931}
+  NpcName: {fileID: 2424627621084358643}
 --- !u!1 &2424627621365493642
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +621,7 @@ GameObject:
   - component: {fileID: 2424627621443344366}
   - component: {fileID: 2424627621443344368}
   - component: {fileID: 2424627621443344369}
+  - component: {fileID: 5262912779721105600}
   m_Layer: 5
   m_Name: PlayerText
   m_TagString: Untagged
@@ -726,6 +746,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5262912779721105600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424627621443344367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4047f50856d53bc40b7d5bd04f4a2596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 2424627621443344369}
+  characterPerSecond: 64
 --- !u!1 &2424627621650405996
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,6 +1005,7 @@ GameObject:
   - component: {fileID: 2424627622606493865}
   - component: {fileID: 2424627622606493867}
   - component: {fileID: 2424627622606493864}
+  - component: {fileID: 5100767272440326931}
   m_Layer: 5
   m_Name: NpcText
   m_TagString: Untagged
@@ -1095,3 +1130,17 @@ MonoBehaviour:
   m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5100767272440326931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424627622606493862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4047f50856d53bc40b7d5bd04f4a2596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 2424627622606493864}
+  characterPerSecond: 64

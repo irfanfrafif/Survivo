@@ -4,7 +4,6 @@ using TMPro;
 
 public class RunningText : MonoBehaviour {
 
-    [SerializeField, TextArea] private string str;
     [SerializeField] private TMP_Text text;
 
     [SerializeField] private float characterPerSecond = 64;
@@ -13,14 +12,14 @@ public class RunningText : MonoBehaviour {
 
     private static readonly char[] terminals = { '.', ',', '?', '!' };
 
-    [ContextMenu("Test")]
-    public void Run() {
+    public void SetDialogue(string str) {
         text.SetText(str);
         StartCoroutine(RunCoroutine());
     }
 
 
     private IEnumerator RunCoroutine() {
+        string str = text.text;
         int stringLength = str.Length;
         float currentChar = 0;
         int currentTarget = 0;
