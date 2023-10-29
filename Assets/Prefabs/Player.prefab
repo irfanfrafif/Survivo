@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6320400422875612799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5, y: 3, z: 1.51}
+  m_LocalPosition: {x: 5.5, y: 3, z: 2.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1dde5799f4a14c8429012a31021002bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 04c54927c53d8dd459aab0610d430e81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,16 +104,16 @@ MonoBehaviour:
   defaultSpeed: 1.75
   movementGrid: {fileID: 0}
   tileGrid: {fileID: 0}
-  baseZ: 1.51
+  baseZ: 2.51
   invertNorth: 1
   gridManager: {fileID: 0}
   openingMachineUI: 0
   facingDirection: 0
   sprite: {fileID: 6320400422875612794}
-  posX: {fileID: 21300000, guid: bf046234f6bce3445a5e435039694b62, type: 3}
-  posY: {fileID: 21300000, guid: 17aecaa53149c7f4680447011ab0ab13, type: 3}
-  negX: {fileID: 21300000, guid: 1dde5799f4a14c8429012a31021002bd, type: 3}
-  negY: {fileID: 21300000, guid: f66fd8b952ac72d4190ab74b7162355f, type: 3}
+  posX: {fileID: 21300000, guid: 14a68e2ec34ecd847951800809e29378, type: 3}
+  posY: {fileID: 21300000, guid: 9e6245297db6e2f4cb26bf3676571e44, type: 3}
+  negX: {fileID: 21300000, guid: 04c54927c53d8dd459aab0610d430e81, type: 3}
+  negY: {fileID: 21300000, guid: eb9c881775694a04282d572cc431fd38, type: 3}
 --- !u!114 &6320400422875612792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,17 +139,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultSpeed: 1
-  defaultStartPos: {x: 11, y: 0, z: 0}
+  defaultStartPos: {x: 10, y: 1, z: 0}
   movementGrid: {fileID: 0}
   tileGrid: {fileID: 0}
-  baseZ: 1.51
+  baseZ: 2.01
   invertNorth: 1
   gridManager: {fileID: 0}
   sprite: {fileID: 6320400422875612794}
-  posX: {fileID: 21300000, guid: bf046234f6bce3445a5e435039694b62, type: 3}
-  posY: {fileID: 21300000, guid: 17aecaa53149c7f4680447011ab0ab13, type: 3}
-  negX: {fileID: 21300000, guid: 1dde5799f4a14c8429012a31021002bd, type: 3}
-  negY: {fileID: 21300000, guid: f66fd8b952ac72d4190ab74b7162355f, type: 3}
+  posX: {fileID: 21300000, guid: 14a68e2ec34ecd847951800809e29378, type: 3}
+  posY: {fileID: 21300000, guid: 9e6245297db6e2f4cb26bf3676571e44, type: 3}
+  negX: {fileID: 21300000, guid: 04c54927c53d8dd459aab0610d430e81, type: 3}
+  negY: {fileID: 21300000, guid: eb9c881775694a04282d572cc431fd38, type: 3}
   openingMachineUI: 0
   facingDirection: 0
 --- !u!114 &6320400422875612740

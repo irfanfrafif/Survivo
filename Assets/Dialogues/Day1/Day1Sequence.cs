@@ -47,7 +47,7 @@ public class Day1Sequence : MonoBehaviour
 
     private void Start()
     {
-        GlobalVariableTest.Instance.IsInDialogue = true;
+        //GlobalVariableTest.Instance.IsInDialogue = true;
 
         Sequence startSequence = DOTween.Sequence();
         Sequence startSequenceText = DOTween.Sequence();
@@ -72,6 +72,7 @@ public class Day1Sequence : MonoBehaviour
 
         if (sleepPod && !sleepPodTrigger)
         {
+            if (GlobalVariableTest.Instance.IsInDialogue) return;
             sleepPodTrigger = true;
             StartCoroutine(AIBCoroutine());          
         }
@@ -79,9 +80,11 @@ public class Day1Sequence : MonoBehaviour
 
     public void GoToNextScene(string node, int lineIndex)
     {
-        GlobalVariableTest.Instance.IsInDialogue = true;
+        //GlobalVariableTest.Instance.IsInDialogue = true;
 
         Sequence startSequence = DOTween.Sequence();
+
+        SoundManager.Instance.PlayClip(0);
 
         startSequence.SetUpdate(true).Append(fade.DOFade(1f, 3f)).AppendInterval(1f).OnComplete(() => SceneManager.LoadScene(2));
     }
@@ -96,6 +99,8 @@ public class Day1Sequence : MonoBehaviour
     IEnumerator AIBCoroutine()
     {
         yield return new WaitForSeconds(0.5f);
+
+        SoundManager.Instance.PlayClip(1);
 
         AIB.StartConversation();
     }

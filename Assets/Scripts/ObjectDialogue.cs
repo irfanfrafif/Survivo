@@ -114,6 +114,8 @@ public class ObjectDialogue : Interactable
             (showPlayer ? PlayerText : NpcText).SetDialogue(textToShow);
             showingText = true;
             shouldShowText = false;
+
+            SoundManager.Instance.PlayClip(2);
         }
 
         if (showingText)

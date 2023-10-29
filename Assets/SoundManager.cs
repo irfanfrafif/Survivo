@@ -60,6 +60,11 @@ public class SoundManager : MonoBehaviour
         PlayBGM(bgms[i]);
     }
 
+    public void PlayCurrentBGM()
+    {
+        musicSource.Play();
+    }
+
     public float GetMasterVolume()
     {
         return AudioListener.volume;

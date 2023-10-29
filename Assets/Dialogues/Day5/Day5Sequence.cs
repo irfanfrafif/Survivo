@@ -59,7 +59,7 @@ public class Day5Sequence : MonoBehaviour
 
     private void Start()
     {
-        GlobalVariableTest.Instance.IsInDialogue = true;
+        //GlobalVariableTest.Instance.IsInDialogue = true;
 
         Sequence startSequence = DOTween.Sequence();
         Sequence startSequenceText = DOTween.Sequence();
@@ -83,6 +83,7 @@ public class Day5Sequence : MonoBehaviour
 
         if (sleepPod && !sleepPodTrigger)
         {
+            if (GlobalVariableTest.Instance.IsInDialogue) return;
             sleepPodTrigger = true;
             StartCoroutine(AIBCoroutine());          
         }
@@ -95,7 +96,7 @@ public class Day5Sequence : MonoBehaviour
 
     public void EndingB(string node, int lineIndex)
     {
-        GlobalVariableTest.Instance.IsInDialogue = true;
+        //GlobalVariableTest.Instance.IsInDialogue = true;
 
         fade.gameObject.SetActive(true);
         endingHeaderB.gameObject.SetActive(true);
@@ -112,9 +113,9 @@ public class Day5Sequence : MonoBehaviour
 
     public void EndingC(string node, int lineIndex)
     {
-        GlobalVariableTest.Instance.IsInDialogue = true;
+        //GlobalVariableTest.Instance.IsInDialogue = true;
 
-        GlobalVariableTest.Instance.IsInDialogue = true;
+        //GlobalVariableTest.Instance.IsInDialogue = true;
 
         fade.gameObject.SetActive(true);
         endingHeaderC.gameObject.SetActive(true);
@@ -139,7 +140,7 @@ public class Day5Sequence : MonoBehaviour
     IEnumerator AIBCoroutine()
     {
         yield return new WaitForSeconds(0.5f);
-
+        SoundManager.Instance.PlayClip(1);
         AIB.StartConversation();
     }
 }
