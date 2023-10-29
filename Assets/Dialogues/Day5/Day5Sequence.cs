@@ -22,6 +22,9 @@ public class Day5Sequence : MonoBehaviour
     [SerializeField] private ObjectDialogue AIA;
     [SerializeField] private ObjectDialogue AIB;
 
+    [Header("Intro General")]
+    [SerializeField] private TMP_Text introHeader;
+
     [Header("Ending General")]
     [SerializeField] private Image fade;
     [SerializeField] private TMP_Text titleScreen;
@@ -56,9 +59,24 @@ public class Day5Sequence : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(AIACoroutine());
+        GlobalVariableTest.Instance.IsInDialogue = true;
+
+        Sequence startSequence = DOTween.Sequence();
+        Sequence startSequenceText = DOTween.Sequence();
+
+        startSequence.SetUpdate(true).AppendInterval(3f).Append(fade.DOFade(0f, 3f));
+
+        startSequenceText.Append(introHeader.DOFade(1f, 2f)).AppendInterval(2f).Append(introHeader.DOFade(0f, 1f))
+            .OnComplete(OnComplete).OnComplete(() => StartCoroutine(AIACoroutine()));
+
+        //StartCoroutine(AIACoroutine());
     }
 
+    void OnComplete()
+    {
+        fade.gameObject.SetActive(false);
+        introHeader.gameObject.SetActive(false);
+    }
     private void Update()
     {
         if (seedPod && serum && liquidizer && food && window && radio && teleport && !GlobalVariableTest.Instance.IsInDialogue) { sleepPod = true; }

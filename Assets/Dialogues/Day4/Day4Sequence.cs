@@ -22,6 +22,8 @@ public class Day4Sequence : MonoBehaviour
     [SerializeField] private ObjectDialogue AIA;
     [SerializeField] private ObjectDialogue AIB;
 
+    [SerializeField] private TMP_Text introHeader;
+
     [Header("Ending")]
     [SerializeField] private Image fade;
     [SerializeField] private TMP_Text endingHeader;
@@ -48,9 +50,24 @@ public class Day4Sequence : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(AIACoroutine());
+        GlobalVariableTest.Instance.IsInDialogue = true;
+
+        Sequence startSequence = DOTween.Sequence();
+        Sequence startSequenceText = DOTween.Sequence();
+
+        startSequence.SetUpdate(true).AppendInterval(3f).Append(fade.DOFade(0f, 3f));
+
+        startSequenceText.Append(introHeader.DOFade(1f, 2f)).AppendInterval(2f).Append(introHeader.DOFade(0f, 1f))
+            .OnComplete(OnComplete).OnComplete(() => StartCoroutine(AIACoroutine()));
+
+        //StartCoroutine(AIACoroutine());
     }
 
+    void OnComplete()
+    {
+        fade.gameObject.SetActive(false);
+        introHeader.gameObject.SetActive(false);
+    }
     private void Update()
     {
         if (seedPod && serum && liquidizer && food && window && radio && teleport && !GlobalVariableTest.Instance.IsInDialogue) { sleepPod = true; }
@@ -66,7 +83,9 @@ public class Day4Sequence : MonoBehaviour
     {
         GlobalVariableTest.Instance.IsInDialogue = true;
 
-        SceneManager.LoadScene(5);
+        Sequence startSequence = DOTween.Sequence();
+
+        startSequence.SetUpdate(true).Append(fade.DOFade(1f, 3f)).AppendInterval(1f).OnComplete(() => SceneManager.LoadScene(5));
     }
 
     public void EndingA(string node, int lineIndex)

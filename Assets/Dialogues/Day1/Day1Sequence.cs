@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using DG.Tweening;
+using TMPro;
 
 public class Day1Sequence : MonoBehaviour
 {
@@ -16,8 +19,13 @@ public class Day1Sequence : MonoBehaviour
     [SerializeField] private bool sleepPod;
     bool sleepPodTrigger;
 
+
     [SerializeField] private ObjectDialogue AIA;
     [SerializeField] private ObjectDialogue AIB;
+
+    [Header("Intro General")]
+    [SerializeField] private Image fade;
+    [SerializeField] private TMP_Text introHeader;
 
     public void SetTrueSeedPod(string node, int lineIndex) { seedPod = true; }
     public void SetTrueSerum(string node, int lineIndex) { serum = true; }
@@ -40,7 +48,22 @@ public class Day1Sequence : MonoBehaviour
     private void Start()
     {
         GlobalVariableTest.Instance.IsInDialogue = true;
-        StartCoroutine(AIACoroutine());
+
+        Sequence startSequence = DOTween.Sequence();
+        Sequence startSequenceText = DOTween.Sequence();
+
+        startSequence.SetUpdate(true).AppendInterval(3f).Append(fade.DOFade(0f, 3f));
+
+        startSequenceText.Append(introHeader.DOFade(1f, 2f)).AppendInterval(2f).Append(introHeader.DOFade(0f, 1f))
+            .OnComplete(OnComplete).OnComplete(() => StartCoroutine(AIACoroutine()));
+
+        //StartCoroutine(AIACoroutine());
+    }
+
+    void OnComplete()
+    {
+        fade.gameObject.SetActive(false);
+        introHeader.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -57,7 +80,10 @@ public class Day1Sequence : MonoBehaviour
     public void GoToNextScene(string node, int lineIndex)
     {
         GlobalVariableTest.Instance.IsInDialogue = true;
-        SceneManager.LoadScene(2);
+
+        Sequence startSequence = DOTween.Sequence();
+
+        startSequence.SetUpdate(true).Append(fade.DOFade(1f, 3f)).AppendInterval(1f).OnComplete(() => SceneManager.LoadScene(2));
     }
 
     IEnumerator AIACoroutine()
