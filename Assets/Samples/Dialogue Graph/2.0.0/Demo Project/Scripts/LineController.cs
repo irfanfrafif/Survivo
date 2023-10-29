@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class LineController : MonoBehaviour {
     public LineEntry Prefab;
-    public NPCDialogue Owner;
+    public ObjectDialogue Owner => GlobalVariableTest.Instance.activeDialogue;
     private List<LineEntry> entries;
     private int selectedIndex;
     private bool isActive;

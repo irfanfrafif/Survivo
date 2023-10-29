@@ -1,0 +1,359 @@
+{
+    "AssetGuid": "e129347820d7cce4ab3fb3d85b322177",
+    "IsBlackboardVisible": false,
+    "DialogueGraphVersion": "2.0.0",
+    "nodes": [
+        {
+            "GUID": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 272.0,
+                    "y": 226.39999389648438,
+                    "width": 446.4000244140625,
+                    "height": 304.0000305175781
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"It’s Johan! But there’s no way to contact him…\\\",\\\"PortGuidA\\\":\\\"7e6794d4-448f-4dce-81cb-430fe1094429\\\",\\\"PortGuidB\\\":\\\"10898a0c-b24d-42fb-b6d0-13f691f84757\\\",\\\"PortGuidC\\\":\\\"16ce2516-d5be-4fb3-9d16-0b3c332abf35\\\"},{\\\"Line\\\":\\\"It’s Johan! But there’s no way to contact him…\\\",\\\"PortGuidA\\\":\\\"28dbb190-fc4e-469d-8891-d84f58832469\\\",\\\"PortGuidB\\\":\\\"906c56ac-2ccd-44d4-9a26-d3c79f6b987e\\\",\\\"PortGuidC\\\":\\\"5ea74284-fc19-4f1e-8c6e-70bf4f8695d1\\\"},{\\\"Line\\\":\\\"There’s an incoming transmission!\\\",\\\"PortGuidA\\\":\\\"5645fe9b-3d3f-4a6b-af93-12da026e7c5e\\\",\\\"PortGuidB\\\":\\\"dec0f34c-119e-4439-9b11-fb09df11d339\\\",\\\"PortGuidC\\\":\\\"498475b1-4e0b-48ac-a3a2-d0aa9eaabac8\\\"}]\"}",
+            "PortData": [
+                "5baa2a28-6380-4a02-b68d-fa9f548bc3e3",
+                "ff4e46ec-1284-4b82-831e-303e96097857",
+                "7e6794d4-448f-4dce-81cb-430fe1094429",
+                "10898a0c-b24d-42fb-b6d0-13f691f84757",
+                "16ce2516-d5be-4fb3-9d16-0b3c332abf35",
+                "28dbb190-fc4e-469d-8891-d84f58832469",
+                "906c56ac-2ccd-44d4-9a26-d3c79f6b987e",
+                "5ea74284-fc19-4f1e-8c6e-70bf4f8695d1",
+                "5645fe9b-3d3f-4a6b-af93-12da026e7c5e",
+                "dec0f34c-119e-4439-9b11-fb09df11d339",
+                "498475b1-4e0b-48ac-a3a2-d0aa9eaabac8"
+            ]
+        },
+        {
+            "GUID": "f9685bb2-221b-4007-9978-7dd8d8ddc024",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 103.00001525878906,
+                    "y": 226.79998779296876,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"e17d4af0-fbe4-4c57-83c5-e49b95e69f61\"}",
+            "PortData": [
+                "ed4473b8-3e41-4483-8ab2-7994ca54c9cf"
+            ]
+        },
+        {
+            "GUID": "1cb1813b-57fe-45db-a917-b85bdcad3aed",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 2653.599853515625,
+                    "y": 745.5999755859375,
+                    "width": 93.60009765625,
+                    "height": 42.4000244140625
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"353d7904-6dbb-4613-a3a5-04b1d4b1700c\"}",
+            "PortData": [
+                "6a890661-b2cb-4b1b-8ab8-984c3a896296"
+            ]
+        },
+        {
+            "GUID": "0f3a4f32-dec7-4f13-ace4-0003f0e33463",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 100.00000762939453,
+                    "y": 319.20001220703127,
+                    "width": 94.4000015258789,
+                    "height": 42.4000244140625
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"557479de-47ec-427e-9e72-1c96b4569155\"}",
+            "PortData": [
+                "65cca2ce-96a2-4dbe-8ff6-909aa14fe1ca"
+            ]
+        },
+        {
+            "GUID": "763946b7-abd7-4d82-99d5-fcb8350ce313",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 920.7999877929688,
+                    "y": 204.0,
+                    "width": 440.80010986328127,
+                    "height": 176.00003051757813
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"I need to return to the Sleep Pod.\\\",\\\"PortGuidA\\\":\\\"2eb603c2-32ac-4020-83ff-5bbb5c2b1ca3\\\",\\\"PortGuidB\\\":\\\"cc3bb9bc-dce0-46f0-b769-be0f244e723e\\\",\\\"PortGuidC\\\":\\\"a3ea7b72-3974-4d37-9a92-33d0361a95aa\\\"}]\"}",
+            "PortData": [
+                "f53ede7f-a320-4427-a1d6-af3273dfcafe",
+                "eb8f23a6-5cd9-433d-9ef9-27c5a623d2ee",
+                "2eb603c2-32ac-4020-83ff-5bbb5c2b1ca3",
+                "cc3bb9bc-dce0-46f0-b769-be0f244e723e",
+                "a3ea7b72-3974-4d37-9a92-33d0361a95aa"
+            ]
+        },
+        {
+            "GUID": "de27190b-f59e-431a-9049-3800ad544911",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 764.7999267578125,
+                    "y": 161.59999084472657,
+                    "width": 75.2000732421875,
+                    "height": 42.399993896484378
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"e17d4af0-fbe4-4c57-83c5-e49b95e69f61\"}",
+            "PortData": [
+                "3da4f291-a89d-4102-b2ba-2015b19aecde"
+            ]
+        },
+        {
+            "GUID": "d5ebb361-1675-495f-a729-50e0b1053c6d",
+            "Type": "DialogueGraph.SelfNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 874.4000244140625,
+                    "y": 468.0,
+                    "width": 351.2000732421875,
+                    "height": 164.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"Listen to transmission\\\",\\\"PortGuidA\\\":\\\"efd38bb7-7bc0-42d9-80aa-d2edc9782800\\\",\\\"PortGuidB\\\":\\\"2d97aa77-fa1e-44fe-8c52-c067d9684938\\\"}]\"}",
+            "PortData": [
+                "da77c497-239c-472e-9cc0-3fb4d6f931a5",
+                "efd38bb7-7bc0-42d9-80aa-d2edc9782800",
+                "2d97aa77-fa1e-44fe-8c52-c067d9684938"
+            ]
+        },
+        {
+            "GUID": "3212a092-bae2-43f4-8757-22a7f7e2af6c",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 1388.23876953125,
+                    "y": 560.3640747070313,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"“This— SOS! Is there *buzz* *buzz*  anyone.. out there?? This– Johan Egloff fro— District B *buzz* *buzz*  —- has food– please send— 15– people—- many dying!”\\\",\\\"PortGuidA\\\":\\\"9d457eaa-6f0c-4f71-8031-d8724e4b6694\\\",\\\"PortGuidB\\\":\\\"52d84366-cd99-479b-b9f2-9ed3ab935e41\\\",\\\"PortGuidC\\\":\\\"b46981c2-fb8b-4536-9eb0-e12b533a3dd2\\\"}]\"}",
+            "PortData": [
+                "69307587-4743-4049-b808-831cdbf5cc62",
+                "cd040a2b-92e2-4899-8858-bd9b81f99f1a",
+                "9d457eaa-6f0c-4f71-8031-d8724e4b6694",
+                "52d84366-cd99-479b-b9f2-9ed3ab935e41",
+                "b46981c2-fb8b-4536-9eb0-e12b533a3dd2"
+            ]
+        },
+        {
+            "GUID": "b5a74c4c-5c57-4bbf-a6db-b8145a3850ab",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 1225.5999755859375,
+                    "y": 672.0,
+                    "width": 116.7999267578125,
+                    "height": 42.4000244140625
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"385bbcd1-e071-49fa-bf70-b35402bd0627\"}",
+            "PortData": [
+                "358164b9-b5d5-4f35-9cab-6fd461c4c2d2"
+            ]
+        },
+        {
+            "GUID": "64bd9ac8-6507-4376-8e46-6fa1788465df",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 2066.39990234375,
+                    "y": 560.0,
+                    "width": 396.800048828125,
+                    "height": 176.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"It’s Johan! But there’s no way to contact him…\\\",\\\"PortGuidA\\\":\\\"1cb38d4d-430a-4472-9d5c-28e59bca50d8\\\",\\\"PortGuidB\\\":\\\"af79c9eb-ee86-4265-a8a8-fd02704225b8\\\",\\\"PortGuidC\\\":\\\"4f0a8d5a-2a30-483a-9d6f-a39d3f903b1d\\\"}]\"}",
+            "PortData": [
+                "0e6170fa-be6e-4bf3-ae1a-374b1d97ba8a",
+                "7dc9f97a-3693-477f-b445-c33bacd73557",
+                "1cb38d4d-430a-4472-9d5c-28e59bca50d8",
+                "af79c9eb-ee86-4265-a8a8-fd02704225b8",
+                "4f0a8d5a-2a30-483a-9d6f-a39d3f903b1d"
+            ]
+        },
+        {
+            "GUID": "d55ce613-c5eb-48fb-abed-00b6f662f895",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 1924.7999267578125,
+                    "y": 703.2000122070313,
+                    "width": 75.2000732421875,
+                    "height": 42.39990234375
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"e17d4af0-fbe4-4c57-83c5-e49b95e69f61\"}",
+            "PortData": [
+                "92423fb8-d26a-4141-97ac-5bd647f174a4"
+            ]
+        },
+        {
+            "GUID": "ba2deb2b-13de-495a-a430-04bf5f52257a",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 123.20000457763672,
+                    "y": 400.0,
+                    "width": 71.20000457763672,
+                    "height": 42.399993896484378
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"44054e43-dfcd-42a6-8537-f54a2585dfed\"}",
+            "PortData": [
+                "8a5c2ef9-37ea-4cf0-afe8-d16d7767f12f"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "Input": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "Output": "f9685bb2-221b-4007-9978-7dd8d8ddc024",
+            "InputPort": "ff4e46ec-1284-4b82-831e-303e96097857",
+            "OutputPort": "ed4473b8-3e41-4483-8ab2-7994ca54c9cf",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "Output": "0f3a4f32-dec7-4f13-ace4-0003f0e33463",
+            "InputPort": "16ce2516-d5be-4fb3-9d16-0b3c332abf35",
+            "OutputPort": "65cca2ce-96a2-4dbe-8ff6-909aa14fe1ca",
+            "InputCapacity": 1,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "763946b7-abd7-4d82-99d5-fcb8350ce313",
+            "Output": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "InputPort": "f53ede7f-a320-4427-a1d6-af3273dfcafe",
+            "OutputPort": "7e6794d4-448f-4dce-81cb-430fe1094429",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "763946b7-abd7-4d82-99d5-fcb8350ce313",
+            "Output": "de27190b-f59e-431a-9049-3800ad544911",
+            "InputPort": "eb8f23a6-5cd9-433d-9ef9-27c5a623d2ee",
+            "OutputPort": "3da4f291-a89d-4102-b2ba-2015b19aecde",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "3212a092-bae2-43f4-8757-22a7f7e2af6c",
+            "Output": "d5ebb361-1675-495f-a729-50e0b1053c6d",
+            "InputPort": "69307587-4743-4049-b808-831cdbf5cc62",
+            "OutputPort": "efd38bb7-7bc0-42d9-80aa-d2edc9782800",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "3212a092-bae2-43f4-8757-22a7f7e2af6c",
+            "Output": "b5a74c4c-5c57-4bbf-a6db-b8145a3850ab",
+            "InputPort": "cd040a2b-92e2-4899-8858-bd9b81f99f1a",
+            "OutputPort": "358164b9-b5d5-4f35-9cab-6fd461c4c2d2",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "64bd9ac8-6507-4376-8e46-6fa1788465df",
+            "Output": "3212a092-bae2-43f4-8757-22a7f7e2af6c",
+            "InputPort": "0e6170fa-be6e-4bf3-ae1a-374b1d97ba8a",
+            "OutputPort": "9d457eaa-6f0c-4f71-8031-d8724e4b6694",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "1cb1813b-57fe-45db-a917-b85bdcad3aed",
+            "Output": "64bd9ac8-6507-4376-8e46-6fa1788465df",
+            "InputPort": "6a890661-b2cb-4b1b-8ab8-984c3a896296",
+            "OutputPort": "af79c9eb-ee86-4265-a8a8-fd02704225b8",
+            "InputCapacity": 1,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "64bd9ac8-6507-4376-8e46-6fa1788465df",
+            "Output": "d55ce613-c5eb-48fb-abed-00b6f662f895",
+            "InputPort": "7dc9f97a-3693-477f-b445-c33bacd73557",
+            "OutputPort": "92423fb8-d26a-4141-97ac-5bd647f174a4",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "d5ebb361-1675-495f-a729-50e0b1053c6d",
+            "Output": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "InputPort": "da77c497-239c-472e-9cc0-3fb4d6f931a5",
+            "OutputPort": "5645fe9b-3d3f-4a6b-af93-12da026e7c5e",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "Output": "ba2deb2b-13de-495a-a430-04bf5f52257a",
+            "InputPort": "5ea74284-fc19-4f1e-8c6e-70bf4f8695d1",
+            "OutputPort": "8a5c2ef9-37ea-4cf0-afe8-d16d7767f12f",
+            "InputCapacity": 1,
+            "OutputCapacity": 1
+        }
+    ],
+    "serializedProperties": [
+        {
+            "Type": "DialogueGraph.ActorProperty",
+            "Data": "{\"$type\":\"DialogueGraph.ActorProperty, DialogueGraph.Editor\",\"GUID\":\"e17d4af0-fbe4-4c57-83c5-e49b95e69f61\",\"Type\":2,\"DisplayName\":\"Player\",\"ReferenceName\":\"Actor_BB1B3133\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"BB1B3133\"}"
+        },
+        {
+            "Type": "DialogueGraph.TriggerProperty",
+            "Data": "{\"$type\":\"DialogueGraph.TriggerProperty, DialogueGraph.Editor\",\"GUID\":\"353d7904-6dbb-4613-a3a5-04b1d4b1700c\",\"Type\":0,\"DisplayName\":\"Set Radio\",\"ReferenceName\":\"Trigger_E2E0A50D\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"E2E0A50D\"}"
+        },
+        {
+            "Type": "DialogueGraph.CheckProperty",
+            "Data": "{\"$type\":\"DialogueGraph.CheckProperty, DialogueGraph.Editor\",\"GUID\":\"557479de-47ec-427e-9e72-1c96b4569155\",\"Type\":1,\"DisplayName\":\"SleepPod\",\"ReferenceName\":\"Check_EB5599B8\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"EB5599B8\"}"
+        },
+        {
+            "Type": "DialogueGraph.ActorProperty",
+            "Data": "{\"$type\":\"DialogueGraph.ActorProperty, DialogueGraph.Editor\",\"GUID\":\"385bbcd1-e071-49fa-bf70-b35402bd0627\",\"Type\":2,\"DisplayName\":\"Transmission\",\"ReferenceName\":\"Actor_BD5B0CF\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"BD5B0CF\"}"
+        },
+        {
+            "Type": "DialogueGraph.CheckProperty",
+            "Data": "{\"$type\":\"DialogueGraph.CheckProperty, DialogueGraph.Editor\",\"GUID\":\"44054e43-dfcd-42a6-8537-f54a2585dfed\",\"Type\":1,\"DisplayName\":\"Radio\",\"ReferenceName\":\"Check_57F664A4\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"57F664A4\"}"
+        }
+    ]
+}

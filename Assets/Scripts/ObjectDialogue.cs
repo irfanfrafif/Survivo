@@ -84,6 +84,9 @@ public class ObjectDialogue : Interactable
             DialogueSystem.ResetConversation();
             isInConversation = true;
             (showPlayer ? PlayerContainer : NpcContainer).SetActive(true);
+
+            GlobalVariableTest.Instance.activeDialogue = this;
+            GlobalVariableTest.Instance.IsInDialogue = isInConversation;
         }
 
         if (showingSecondaryScreen)
@@ -127,6 +130,8 @@ public class ObjectDialogue : Interactable
                 shouldShowText = false;
                 showingText = false;
 
+                GlobalVariableTest.Instance.IsInDialogue = isInConversation;
+
                 PlayerContainer.SetActive(false);
                 NpcContainer.SetActive(false);
                 return;
@@ -150,6 +155,16 @@ public class ObjectDialogue : Interactable
                 LineController.Initialize(currentLines);
             }
         }
+    }
+
+    public void PlayerSelect(int index)
+    {
+        LineController.gameObject.SetActive(false);
+        DialogueSystem.ProgressSelf(index);
+        //textToShow = DialogueSystem.ProgressSelf(index);
+        isPlayerChoosing = false;
+        //shouldShowText = true;
+        //showPlayer = true;
     }
 
     protected override void InteractLogic()

@@ -1,0 +1,67 @@
+{
+    "AssetGuid": "b4c38eb069ff7014fb63c6bde85a8535",
+    "IsBlackboardVisible": false,
+    "DialogueGraphVersion": "2.0.0",
+    "nodes": [
+        {
+            "GUID": "d1dfcff5-f12e-4eee-8371-51d1b330f8c5",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": -539.2000122070313,
+                    "y": 149.6000213623047,
+                    "width": 396.79998779296877,
+                    "height": 176.0000457763672
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"Another day trapped here. Should I check on the plants?\\\",\\\"PortGuidA\\\":\\\"842e9843-eaee-4dbb-8faf-af3c89d47619\\\",\\\"PortGuidB\\\":\\\"bca7c968-5e07-43dd-b5ed-4f214d589003\\\",\\\"PortGuidC\\\":\\\"2dd0171d-53b6-4077-a854-67d96c0970cc\\\"}]\"}",
+            "PortData": [
+                "973fd3eb-1810-4fd8-8b69-a50566928377",
+                "4c3d1894-dc76-430a-a2ff-ebff55ed79d0",
+                "842e9843-eaee-4dbb-8faf-af3c89d47619",
+                "bca7c968-5e07-43dd-b5ed-4f214d589003",
+                "2dd0171d-53b6-4077-a854-67d96c0970cc"
+            ]
+        },
+        {
+            "GUID": "d0b9000c-ddb2-4d91-924c-f8beeb46bdf0",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": -648.0,
+                    "y": 202.40000915527345,
+                    "width": 75.20001220703125,
+                    "height": 42.399993896484378
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"629b7e6f-4dc5-4f41-b2f5-2b191ae44a47\"}",
+            "PortData": [
+                "835e7095-ed49-4726-a6ea-acc6c572a1e7"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "Input": "d1dfcff5-f12e-4eee-8371-51d1b330f8c5",
+            "Output": "d0b9000c-ddb2-4d91-924c-f8beeb46bdf0",
+            "InputPort": "4c3d1894-dc76-430a-a2ff-ebff55ed79d0",
+            "OutputPort": "835e7095-ed49-4726-a6ea-acc6c572a1e7",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        }
+    ],
+    "serializedProperties": [
+        {
+            "Type": "DialogueGraph.ActorProperty",
+            "Data": "{\"$type\":\"DialogueGraph.ActorProperty, DialogueGraph.Editor\",\"GUID\":\"629b7e6f-4dc5-4f41-b2f5-2b191ae44a47\",\"Type\":2,\"DisplayName\":\"Player\",\"ReferenceName\":\"Actor_D25B4EC\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"D25B4EC\"}"
+        },
+        {
+            "Type": "DialogueGraph.ActorProperty",
+            "Data": "{\"$type\":\"DialogueGraph.ActorProperty, DialogueGraph.Editor\",\"GUID\":\"20362b7c-7245-4a34-9818-8aec410ea145\",\"Type\":2,\"DisplayName\":\"AI\",\"ReferenceName\":\"Actor_8C091DB4\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"8C091DB4\"}"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "AssetGuid": "6eb0b5af39b2c5d4ab4427d439853b45",
+    "IsBlackboardVisible": false,
+    "DialogueGraphVersion": "2.0.0",
+    "nodes": [
+        {
+            "GUID": "7b5759ec-72cc-42f5-837d-1ffada0ad8a2",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 157.99998474121095,
+                    "y": 199.8000030517578,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"BBB\\\",\\\"PortGuidA\\\":\\\"bef3eb62-a079-4dc5-9f65-80b5dc009052\\\",\\\"PortGuidB\\\":\\\"f6b96474-f698-4d41-9663-4f77307c0d96\\\",\\\"PortGuidC\\\":\\\"8c63ee9b-80e7-4cec-b262-53b5e80f4a51\\\"}]\"}",
+            "PortData": [
+                "4207c025-b9c4-43bc-885f-4909aea670f7",
+                "514db738-2c12-4d1e-a91c-d9592b4247fd",
+                "bef3eb62-a079-4dc5-9f65-80b5dc009052",
+                "f6b96474-f698-4d41-9663-4f77307c0d96",
+                "8c63ee9b-80e7-4cec-b262-53b5e80f4a51"
+            ]
+        }
+    ],
+    "edges": [],
+    "serializedProperties": []
+}

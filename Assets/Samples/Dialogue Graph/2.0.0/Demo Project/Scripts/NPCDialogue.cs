@@ -94,7 +94,7 @@ public class NPCDialogue : MonoBehaviour {
 
     public void PlayerSelect(int index) {
         LineController.gameObject.SetActive(false);
-        textToShow = DialogueSystem.ProgressSelf(index);
+        //textToShow = DialogueSystem.ProgressSelf(index);
         isPlayerChoosing = false;
         shouldShowText = true;
         showPlayer = true;

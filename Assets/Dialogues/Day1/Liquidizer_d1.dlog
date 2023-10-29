@@ -1,0 +1,182 @@
+{
+    "AssetGuid": "84b1e2e3b4cd915469f4a5d68a6daed5",
+    "IsBlackboardVisible": true,
+    "DialogueGraphVersion": "2.0.0",
+    "nodes": [
+        {
+            "GUID": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 257.0,
+                    "y": 215.79998779296876,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"Is this what can convert the potato into batteries?\\\",\\\"PortGuidA\\\":\\\"7e6794d4-448f-4dce-81cb-430fe1094429\\\",\\\"PortGuidB\\\":\\\"10898a0c-b24d-42fb-b6d0-13f691f84757\\\",\\\"PortGuidC\\\":\\\"16ce2516-d5be-4fb3-9d16-0b3c332abf35\\\"},{\\\"Line\\\":\\\"Is this what can convert the potato into batteries?\\\",\\\"PortGuidA\\\":\\\"9604bbce-c517-4b01-adff-a6405629281e\\\",\\\"PortGuidB\\\":\\\"166b5e01-7824-45b0-8eb4-9f85b6c448b5\\\",\\\"PortGuidC\\\":\\\"e6f0f3fa-f2a1-4e2c-a440-75124fb3edea\\\"}]\"}",
+            "PortData": [
+                "5baa2a28-6380-4a02-b68d-fa9f548bc3e3",
+                "ff4e46ec-1284-4b82-831e-303e96097857",
+                "7e6794d4-448f-4dce-81cb-430fe1094429",
+                "10898a0c-b24d-42fb-b6d0-13f691f84757",
+                "16ce2516-d5be-4fb3-9d16-0b3c332abf35",
+                "9604bbce-c517-4b01-adff-a6405629281e",
+                "166b5e01-7824-45b0-8eb4-9f85b6c448b5",
+                "e6f0f3fa-f2a1-4e2c-a440-75124fb3edea"
+            ]
+        },
+        {
+            "GUID": "f9685bb2-221b-4007-9978-7dd8d8ddc024",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 103.00001525878906,
+                    "y": 226.79998779296876,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"e17d4af0-fbe4-4c57-83c5-e49b95e69f61\"}",
+            "PortData": [
+                "ed4473b8-3e41-4483-8ab2-7994ca54c9cf"
+            ]
+        },
+        {
+            "GUID": "662a05d5-21b3-49ea-b1ae-910cd79524fb",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 947.2000122070313,
+                    "y": 220.7999725341797,
+                    "width": 145.60003662109376,
+                    "height": 95.19999694824219
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"I need to return to the Sleep Pod.\\\",\\\"PortGuidA\\\":\\\"7b66b377-e4d9-412c-9b11-e0caf2074d03\\\",\\\"PortGuidB\\\":\\\"0567084d-727b-40d2-ace1-b9ddc08e2cf5\\\",\\\"PortGuidC\\\":\\\"33f9d198-f30a-4ca8-b43c-cc124d313da4\\\"}]\"}",
+            "PortData": [
+                "1009f525-f754-4ac2-a531-42135e15c868",
+                "6a05c31b-6c2c-4e60-ac80-6c73b047fe71",
+                "7b66b377-e4d9-412c-9b11-e0caf2074d03",
+                "0567084d-727b-40d2-ace1-b9ddc08e2cf5",
+                "33f9d198-f30a-4ca8-b43c-cc124d313da4"
+            ]
+        },
+        {
+            "GUID": "14fed76d-6295-421e-9390-77c14424b8f7",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 779.2963256835938,
+                    "y": 459.30426025390627,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"c8e202ad-9bbf-4937-9392-d19d08bba635\"}",
+            "PortData": [
+                "ec0f19a6-7dea-440f-b9a9-033eb7b3132a"
+            ]
+        },
+        {
+            "GUID": "6b2e17f3-67f4-4ebe-95da-fbf9b151c695",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 741.6000366210938,
+                    "y": 173.59999084472657,
+                    "width": 75.199951171875,
+                    "height": 42.40000915527344
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"e17d4af0-fbe4-4c57-83c5-e49b95e69f61\"}",
+            "PortData": [
+                "e383a885-f0d7-43a7-9dfe-ed78371b4a68"
+            ]
+        },
+        {
+            "GUID": "0a150f8c-ad0b-4760-9f9e-35523ebffd2a",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 84.00000762939453,
+                    "y": 297.6000061035156,
+                    "width": 94.4000015258789,
+                    "height": 42.399993896484378
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"f458d949-3d18-4e5b-a155-e80fea8dbbcf\"}",
+            "PortData": [
+                "370730f4-63fc-47ca-8fe8-48ffaafa1a79"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "Input": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "Output": "f9685bb2-221b-4007-9978-7dd8d8ddc024",
+            "InputPort": "ff4e46ec-1284-4b82-831e-303e96097857",
+            "OutputPort": "ed4473b8-3e41-4483-8ab2-7994ca54c9cf",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "662a05d5-21b3-49ea-b1ae-910cd79524fb",
+            "Output": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "InputPort": "1009f525-f754-4ac2-a531-42135e15c868",
+            "OutputPort": "7e6794d4-448f-4dce-81cb-430fe1094429",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "14fed76d-6295-421e-9390-77c14424b8f7",
+            "Output": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "InputPort": "ec0f19a6-7dea-440f-b9a9-033eb7b3132a",
+            "OutputPort": "166b5e01-7824-45b0-8eb4-9f85b6c448b5",
+            "InputCapacity": 1,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "662a05d5-21b3-49ea-b1ae-910cd79524fb",
+            "Output": "6b2e17f3-67f4-4ebe-95da-fbf9b151c695",
+            "InputPort": "6a05c31b-6c2c-4e60-ac80-6c73b047fe71",
+            "OutputPort": "e383a885-f0d7-43a7-9dfe-ed78371b4a68",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "aa45342e-5ec6-4b48-ae9a-348b8b60b4c4",
+            "Output": "0a150f8c-ad0b-4760-9f9e-35523ebffd2a",
+            "InputPort": "16ce2516-d5be-4fb3-9d16-0b3c332abf35",
+            "OutputPort": "370730f4-63fc-47ca-8fe8-48ffaafa1a79",
+            "InputCapacity": 1,
+            "OutputCapacity": 1
+        }
+    ],
+    "serializedProperties": [
+        {
+            "Type": "DialogueGraph.ActorProperty",
+            "Data": "{\"$type\":\"DialogueGraph.ActorProperty, DialogueGraph.Editor\",\"GUID\":\"e17d4af0-fbe4-4c57-83c5-e49b95e69f61\",\"Type\":2,\"DisplayName\":\"Player\",\"ReferenceName\":\"Actor_BB1B3133\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"BB1B3133\"}"
+        },
+        {
+            "Type": "DialogueGraph.CheckProperty",
+            "Data": "{\"$type\":\"DialogueGraph.CheckProperty, DialogueGraph.Editor\",\"GUID\":\"f458d949-3d18-4e5b-a155-e80fea8dbbcf\",\"Type\":1,\"DisplayName\":\"SleepPod\",\"ReferenceName\":\"Check_DEB4C1E3\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"DEB4C1E3\"}"
+        },
+        {
+            "Type": "DialogueGraph.TriggerProperty",
+            "Data": "{\"$type\":\"DialogueGraph.TriggerProperty, DialogueGraph.Editor\",\"GUID\":\"c8e202ad-9bbf-4937-9392-d19d08bba635\",\"Type\":0,\"DisplayName\":\"Set\",\"ReferenceName\":\"Trigger_B29DD9D5\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"B29DD9D5\"}"
+        }
+    ]
+}

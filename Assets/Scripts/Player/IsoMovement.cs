@@ -22,6 +22,7 @@ namespace Potato {
         }
 
         [SerializeField] private float defaultSpeed = 5;
+        [SerializeField] private Vector3Int defaultStartPos;
         [SerializeField] private Grid movementGrid;
         [SerializeField] private Grid tileGrid;
         [SerializeField] private float baseZ;
@@ -75,7 +76,7 @@ namespace Potato {
         //}
 
         private void Start() {
-            currentGridPos = new Vector3Int(0, 0, 0);
+            currentGridPos = defaultStartPos;
 
             Vector3 gridZero = movementGrid.CellToWorld(currentGridPos);
             gridZero.z = baseZ;
@@ -287,6 +288,7 @@ namespace Potato {
                 onMoveInput = true;
                 onClickMove = false;
                 paths.Clear();
+                OnArrived = null;
             } else {
                 onMoveInput = false;
             }
@@ -380,6 +382,9 @@ namespace Potato {
             GoHere(tileGrid.WorldToCell(wpmp));
         }
 
-
+        public bool IsEndMoving()
+        {
+            return moveState == MoveState.EndMoving;
+        }
     }
 }

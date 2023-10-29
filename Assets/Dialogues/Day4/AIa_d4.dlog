@@ -1,0 +1,130 @@
+{
+    "AssetGuid": "99b15cac223f95340a1a86c3c251bf81",
+    "IsBlackboardVisible": false,
+    "DialogueGraphVersion": "2.0.0",
+    "nodes": [
+        {
+            "GUID": "d1dfcff5-f12e-4eee-8371-51d1b330f8c5",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": -539.2000122070313,
+                    "y": 149.6000213623047,
+                    "width": 396.79998779296877,
+                    "height": 176.0000457763672
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"I guess this is the last day I will wake up.. Hopefully Johan Egloff is okay..\\\",\\\"PortGuidA\\\":\\\"842e9843-eaee-4dbb-8faf-af3c89d47619\\\",\\\"PortGuidB\\\":\\\"bca7c968-5e07-43dd-b5ed-4f214d589003\\\",\\\"PortGuidC\\\":\\\"2dd0171d-53b6-4077-a854-67d96c0970cc\\\"},{\\\"Line\\\":\\\"Such boring days trapped inside.\\\",\\\"PortGuidA\\\":\\\"f5bba0a0-9dfa-4dad-ad64-9f2b4d94fefd\\\",\\\"PortGuidB\\\":\\\"614b8493-7bdb-4cdb-8521-065637817dce\\\",\\\"PortGuidC\\\":\\\"4eb7e772-18e9-413f-9e83-283c84042d3f\\\"}]\"}",
+            "PortData": [
+                "973fd3eb-1810-4fd8-8b69-a50566928377",
+                "4c3d1894-dc76-430a-a2ff-ebff55ed79d0",
+                "842e9843-eaee-4dbb-8faf-af3c89d47619",
+                "bca7c968-5e07-43dd-b5ed-4f214d589003",
+                "2dd0171d-53b6-4077-a854-67d96c0970cc",
+                "f5bba0a0-9dfa-4dad-ad64-9f2b4d94fefd",
+                "614b8493-7bdb-4cdb-8521-065637817dce",
+                "4eb7e772-18e9-413f-9e83-283c84042d3f"
+            ]
+        },
+        {
+            "GUID": "d0b9000c-ddb2-4d91-924c-f8beeb46bdf0",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": -648.0,
+                    "y": 202.40000915527345,
+                    "width": 75.20001220703125,
+                    "height": 42.399993896484378
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"629b7e6f-4dc5-4f41-b2f5-2b191ae44a47\"}",
+            "PortData": [
+                "835e7095-ed49-4726-a6ea-acc6c572a1e7"
+            ]
+        },
+        {
+            "GUID": "f1508f1e-fa69-4302-8143-067d12c580f4",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": -698.8090209960938,
+                    "y": 289.0985107421875,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"1b9d33f2-8930-4947-8bc1-29bded8c42c0\"}",
+            "PortData": [
+                "cdb40d67-0d0e-48fa-b8d8-8c2234db96c4"
+            ]
+        },
+        {
+            "GUID": "2057a4a6-0fb4-48f2-b7c4-3bb4c88ec523",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": -698.3999633789063,
+                    "y": 352.79998779296877,
+                    "width": 89.5999755859375,
+                    "height": 42.4000244140625
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"339bf9be-181a-4108-82cb-b710427b0215\"}",
+            "PortData": [
+                "c2333bf1-4009-4774-af60-0a5703e08542"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "Input": "d1dfcff5-f12e-4eee-8371-51d1b330f8c5",
+            "Output": "d0b9000c-ddb2-4d91-924c-f8beeb46bdf0",
+            "InputPort": "4c3d1894-dc76-430a-a2ff-ebff55ed79d0",
+            "OutputPort": "835e7095-ed49-4726-a6ea-acc6c572a1e7",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "d1dfcff5-f12e-4eee-8371-51d1b330f8c5",
+            "Output": "f1508f1e-fa69-4302-8143-067d12c580f4",
+            "InputPort": "2dd0171d-53b6-4077-a854-67d96c0970cc",
+            "OutputPort": "cdb40d67-0d0e-48fa-b8d8-8c2234db96c4",
+            "InputCapacity": 1,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "d1dfcff5-f12e-4eee-8371-51d1b330f8c5",
+            "Output": "2057a4a6-0fb4-48f2-b7c4-3bb4c88ec523",
+            "InputPort": "4eb7e772-18e9-413f-9e83-283c84042d3f",
+            "OutputPort": "c2333bf1-4009-4774-af60-0a5703e08542",
+            "InputCapacity": 1,
+            "OutputCapacity": 1
+        }
+    ],
+    "serializedProperties": [
+        {
+            "Type": "DialogueGraph.ActorProperty",
+            "Data": "{\"$type\":\"DialogueGraph.ActorProperty, DialogueGraph.Editor\",\"GUID\":\"629b7e6f-4dc5-4f41-b2f5-2b191ae44a47\",\"Type\":2,\"DisplayName\":\"Player\",\"ReferenceName\":\"Actor_D25B4EC\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"D25B4EC\"}"
+        },
+        {
+            "Type": "DialogueGraph.ActorProperty",
+            "Data": "{\"$type\":\"DialogueGraph.ActorProperty, DialogueGraph.Editor\",\"GUID\":\"20362b7c-7245-4a34-9818-8aec410ea145\",\"Type\":2,\"DisplayName\":\"AI\",\"ReferenceName\":\"Actor_8C091DB4\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"8C091DB4\"}"
+        },
+        {
+            "Type": "DialogueGraph.CheckProperty",
+            "Data": "{\"$type\":\"DialogueGraph.CheckProperty, DialogueGraph.Editor\",\"GUID\":\"1b9d33f2-8930-4947-8bc1-29bded8c42c0\",\"Type\":1,\"DisplayName\":\"Check1A\",\"ReferenceName\":\"Check_6976024D\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"6976024D\"}"
+        },
+        {
+            "Type": "DialogueGraph.CheckProperty",
+            "Data": "{\"$type\":\"DialogueGraph.CheckProperty, DialogueGraph.Editor\",\"GUID\":\"339bf9be-181a-4108-82cb-b710427b0215\",\"Type\":1,\"DisplayName\":\"Check1B\",\"ReferenceName\":\"Check_851AB10\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"851AB10\"}"
+        }
+    ]
+}

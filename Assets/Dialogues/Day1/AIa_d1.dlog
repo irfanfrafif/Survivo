@@ -1,0 +1,347 @@
+{
+    "AssetGuid": "bd4bc86e316813640b4338e24fde1a40",
+    "IsBlackboardVisible": false,
+    "DialogueGraphVersion": "2.0.0",
+    "nodes": [
+        {
+            "GUID": "d1dfcff5-f12e-4eee-8371-51d1b330f8c5",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": -539.2000122070313,
+                    "y": 149.6000213623047,
+                    "width": 396.79998779296877,
+                    "height": 176.0000457763672
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"My head… hurts. Where.. Am I?\\\",\\\"PortGuidA\\\":\\\"842e9843-eaee-4dbb-8faf-af3c89d47619\\\",\\\"PortGuidB\\\":\\\"bca7c968-5e07-43dd-b5ed-4f214d589003\\\",\\\"PortGuidC\\\":\\\"2dd0171d-53b6-4077-a854-67d96c0970cc\\\"}]\"}",
+            "PortData": [
+                "973fd3eb-1810-4fd8-8b69-a50566928377",
+                "4c3d1894-dc76-430a-a2ff-ebff55ed79d0",
+                "842e9843-eaee-4dbb-8faf-af3c89d47619",
+                "bca7c968-5e07-43dd-b5ed-4f214d589003",
+                "2dd0171d-53b6-4077-a854-67d96c0970cc"
+            ]
+        },
+        {
+            "GUID": "ee7e7bed-b43e-41a5-8b22-82fac222c0b7",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 180.8000030517578,
+                    "y": -86.4000015258789,
+                    "width": 395.99993896484377,
+                    "height": 175.99996948242188
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"Welcome to the Egloff Botanical Observatory and Nurture Organization’s West Outpost.\\\",\\\"PortGuidA\\\":\\\"59b009da-f1c1-471c-9a18-43affcbd226e\\\",\\\"PortGuidB\\\":\\\"4bc51331-b11e-4fe7-9d0d-69254d4de13b\\\",\\\"PortGuidC\\\":\\\"a73432ff-caf4-4925-9aad-57a9659f91cb\\\"}]\"}",
+            "PortData": [
+                "3b75c4af-31af-46d6-9c62-e3f034e8cd88",
+                "1aa0aa14-23c4-44b0-b3cf-76e2247b9eef",
+                "59b009da-f1c1-471c-9a18-43affcbd226e",
+                "4bc51331-b11e-4fe7-9d0d-69254d4de13b",
+                "a73432ff-caf4-4925-9aad-57a9659f91cb"
+            ]
+        },
+        {
+            "GUID": "602be04c-dcdc-4dc9-8a55-a5b2a0ae1342",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": -39.20000457763672,
+                    "y": 206.3999786376953,
+                    "width": 50.40000915527344,
+                    "height": 42.4000244140625
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"20362b7c-7245-4a34-9818-8aec410ea145\"}",
+            "PortData": [
+                "7c079e84-6f7d-4636-aba0-0a4103828bac"
+            ]
+        },
+        {
+            "GUID": "d0b9000c-ddb2-4d91-924c-f8beeb46bdf0",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": -648.0,
+                    "y": 202.40000915527345,
+                    "width": 75.20001220703125,
+                    "height": 42.399993896484378
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"629b7e6f-4dc5-4f41-b2f5-2b191ae44a47\"}",
+            "PortData": [
+                "835e7095-ed49-4726-a6ea-acc6c572a1e7"
+            ]
+        },
+        {
+            "GUID": "a87b545a-3e10-4d66-8b22-4a8506d00ae4",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 883.2000122070313,
+                    "y": 217.60011291503907,
+                    "width": 396.79998779296877,
+                    "height": 176.00001525878907
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"Ah! Our frosting experiment is a success?! I’m really awake!\\\",\\\"PortGuidA\\\":\\\"12343ea6-fb03-4cf7-a29c-affb07bf6135\\\",\\\"PortGuidB\\\":\\\"9bdd24ec-3a48-471e-80af-2cc97e10515a\\\",\\\"PortGuidC\\\":\\\"7583332a-9201-4fe7-9f93-c1b0049aaf56\\\"}]\"}",
+            "PortData": [
+                "58fd9d58-9c95-4c9b-874c-6bf8cea770aa",
+                "82099f58-de48-4d42-8feb-2c0ca53d4140",
+                "12343ea6-fb03-4cf7-a29c-affb07bf6135",
+                "9bdd24ec-3a48-471e-80af-2cc97e10515a",
+                "7583332a-9201-4fe7-9f93-c1b0049aaf56"
+            ]
+        },
+        {
+            "GUID": "46c7d761-8a70-442e-bae4-5bb39c420835",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 708.7999877929688,
+                    "y": 132.80007934570313,
+                    "width": 75.20001220703125,
+                    "height": 42.399932861328128
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"629b7e6f-4dc5-4f41-b2f5-2b191ae44a47\"}",
+            "PortData": [
+                "517bd75e-2152-4563-a9f7-020c4980ce08"
+            ]
+        },
+        {
+            "GUID": "188398f1-9f8f-4d56-a9d2-797e7d5a7465",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 1618.39990234375,
+                    "y": -31.199987411499025,
+                    "width": 396.0,
+                    "height": 176.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"What’s the date?\\\",\\\"PortGuidA\\\":\\\"13810a3b-11a5-4fae-ac6d-78dc5b72fbfb\\\",\\\"PortGuidB\\\":\\\"33a3c24c-d0f1-4ff1-b56e-808b7a21d12e\\\",\\\"PortGuidC\\\":\\\"9fc62f23-8b1b-43f0-a5b9-00f0e522bad9\\\"}]\"}",
+            "PortData": [
+                "852b51a4-fd08-4c5f-b58b-70fc0e1c9e93",
+                "22fa9d58-68e0-401a-8ebd-31e06a566f15",
+                "13810a3b-11a5-4fae-ac6d-78dc5b72fbfb",
+                "33a3c24c-d0f1-4ff1-b56e-808b7a21d12e",
+                "9fc62f23-8b1b-43f0-a5b9-00f0e522bad9"
+            ]
+        },
+        {
+            "GUID": "3174f776-1636-4b8c-9b1a-3e28b98b0392",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 1419.199951171875,
+                    "y": 217.60006713867188,
+                    "width": 75.199951171875,
+                    "height": 42.39996337890625
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"629b7e6f-4dc5-4f41-b2f5-2b191ae44a47\"}",
+            "PortData": [
+                "d0b79ce3-1620-4de3-878f-da01030b7c3e"
+            ]
+        },
+        {
+            "GUID": "3121061d-380d-4be1-bca8-6d3b3798f74c",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 2196.0,
+                    "y": 130.3999481201172,
+                    "width": 396.800048828125,
+                    "height": 175.99998474121095
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"July 20th, 2125.\\\",\\\"PortGuidA\\\":\\\"b963227b-b468-4e11-971a-02ee89347209\\\",\\\"PortGuidB\\\":\\\"8b50cd84-2808-453c-a5d5-69cc7746025f\\\",\\\"PortGuidC\\\":\\\"e9250ee9-f886-4574-8e9e-ab18cb019a56\\\"}]\"}",
+            "PortData": [
+                "c154fe65-e2df-478e-b035-1a930ba1936a",
+                "e71e194e-974c-4628-9864-d2e96290ba7c",
+                "b963227b-b468-4e11-971a-02ee89347209",
+                "8b50cd84-2808-453c-a5d5-69cc7746025f",
+                "e9250ee9-f886-4574-8e9e-ab18cb019a56"
+            ]
+        },
+        {
+            "GUID": "b1a6b185-b90d-43e1-95c7-26bd8cc368a1",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 2094.39990234375,
+                    "y": 14.399988174438477,
+                    "width": 50.400146484375,
+                    "height": 42.39996337890625
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"20362b7c-7245-4a34-9818-8aec410ea145\"}",
+            "PortData": [
+                "d67e11ae-d96c-49cc-b165-fccc5bb62306"
+            ]
+        },
+        {
+            "GUID": "8b3bc672-cca2-4dc6-9b73-6bc7c002c52a",
+            "Type": "DialogueGraph.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 2663.199951171875,
+                    "y": 130.3999481201172,
+                    "width": 396.0,
+                    "height": 175.99998474121095
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"Is this some type of joke? I have been asleep for 100 years?!\\\",\\\"PortGuidA\\\":\\\"eb69cd12-cff9-4c01-80e2-269bb74b57a3\\\",\\\"PortGuidB\\\":\\\"e19efbe6-13c4-491d-83dc-f25ae1bb2202\\\",\\\"PortGuidC\\\":\\\"75cba97f-6272-4f60-8cbc-5a9fc4e9df1f\\\"}]\"}",
+            "PortData": [
+                "186e46d2-8b8a-42f7-9a82-47734daad371",
+                "6fa39c09-0fbd-4efe-9993-e48187309730",
+                "eb69cd12-cff9-4c01-80e2-269bb74b57a3",
+                "e19efbe6-13c4-491d-83dc-f25ae1bb2202",
+                "75cba97f-6272-4f60-8cbc-5a9fc4e9df1f"
+            ]
+        },
+        {
+            "GUID": "dcbd5576-19ec-4799-b162-fa791409adaa",
+            "Type": "DialogueGraph.PropertyNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 2517.599853515625,
+                    "y": -6.400041580200195,
+                    "width": 75.2001953125,
+                    "height": 42.4000244140625
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"propertyGuid\":\"629b7e6f-4dc5-4f41-b2f5-2b191ae44a47\"}",
+            "PortData": [
+                "d2895c33-1647-4cd7-bb7b-458913b9a4e2"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "Input": "d1dfcff5-f12e-4eee-8371-51d1b330f8c5",
+            "Output": "d0b9000c-ddb2-4d91-924c-f8beeb46bdf0",
+            "InputPort": "4c3d1894-dc76-430a-a2ff-ebff55ed79d0",
+            "OutputPort": "835e7095-ed49-4726-a6ea-acc6c572a1e7",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "ee7e7bed-b43e-41a5-8b22-82fac222c0b7",
+            "Output": "602be04c-dcdc-4dc9-8a55-a5b2a0ae1342",
+            "InputPort": "1aa0aa14-23c4-44b0-b3cf-76e2247b9eef",
+            "OutputPort": "7c079e84-6f7d-4636-aba0-0a4103828bac",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "a87b545a-3e10-4d66-8b22-4a8506d00ae4",
+            "Output": "46c7d761-8a70-442e-bae4-5bb39c420835",
+            "InputPort": "82099f58-de48-4d42-8feb-2c0ca53d4140",
+            "OutputPort": "517bd75e-2152-4563-a9f7-020c4980ce08",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "188398f1-9f8f-4d56-a9d2-797e7d5a7465",
+            "Output": "3174f776-1636-4b8c-9b1a-3e28b98b0392",
+            "InputPort": "22fa9d58-68e0-401a-8ebd-31e06a566f15",
+            "OutputPort": "d0b79ce3-1620-4de3-878f-da01030b7c3e",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "3121061d-380d-4be1-bca8-6d3b3798f74c",
+            "Output": "b1a6b185-b90d-43e1-95c7-26bd8cc368a1",
+            "InputPort": "e71e194e-974c-4628-9864-d2e96290ba7c",
+            "OutputPort": "d67e11ae-d96c-49cc-b165-fccc5bb62306",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "8b3bc672-cca2-4dc6-9b73-6bc7c002c52a",
+            "Output": "dcbd5576-19ec-4799-b162-fa791409adaa",
+            "InputPort": "6fa39c09-0fbd-4efe-9993-e48187309730",
+            "OutputPort": "d2895c33-1647-4cd7-bb7b-458913b9a4e2",
+            "InputCapacity": 0,
+            "OutputCapacity": 1
+        },
+        {
+            "Input": "ee7e7bed-b43e-41a5-8b22-82fac222c0b7",
+            "Output": "d1dfcff5-f12e-4eee-8371-51d1b330f8c5",
+            "InputPort": "3b75c4af-31af-46d6-9c62-e3f034e8cd88",
+            "OutputPort": "842e9843-eaee-4dbb-8faf-af3c89d47619",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "a87b545a-3e10-4d66-8b22-4a8506d00ae4",
+            "Output": "ee7e7bed-b43e-41a5-8b22-82fac222c0b7",
+            "InputPort": "58fd9d58-9c95-4c9b-874c-6bf8cea770aa",
+            "OutputPort": "59b009da-f1c1-471c-9a18-43affcbd226e",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "188398f1-9f8f-4d56-a9d2-797e7d5a7465",
+            "Output": "a87b545a-3e10-4d66-8b22-4a8506d00ae4",
+            "InputPort": "852b51a4-fd08-4c5f-b58b-70fc0e1c9e93",
+            "OutputPort": "12343ea6-fb03-4cf7-a29c-affb07bf6135",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "3121061d-380d-4be1-bca8-6d3b3798f74c",
+            "Output": "188398f1-9f8f-4d56-a9d2-797e7d5a7465",
+            "InputPort": "c154fe65-e2df-478e-b035-1a930ba1936a",
+            "OutputPort": "13810a3b-11a5-4fae-ac6d-78dc5b72fbfb",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "8b3bc672-cca2-4dc6-9b73-6bc7c002c52a",
+            "Output": "3121061d-380d-4be1-bca8-6d3b3798f74c",
+            "InputPort": "186e46d2-8b8a-42f7-9a82-47734daad371",
+            "OutputPort": "b963227b-b468-4e11-971a-02ee89347209",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        }
+    ],
+    "serializedProperties": [
+        {
+            "Type": "DialogueGraph.ActorProperty",
+            "Data": "{\"$type\":\"DialogueGraph.ActorProperty, DialogueGraph.Editor\",\"GUID\":\"629b7e6f-4dc5-4f41-b2f5-2b191ae44a47\",\"Type\":2,\"DisplayName\":\"Player\",\"ReferenceName\":\"Actor_D25B4EC\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"D25B4EC\"}"
+        },
+        {
+            "Type": "DialogueGraph.ActorProperty",
+            "Data": "{\"$type\":\"DialogueGraph.ActorProperty, DialogueGraph.Editor\",\"GUID\":\"20362b7c-7245-4a34-9818-8aec410ea145\",\"Type\":2,\"DisplayName\":\"AI\",\"ReferenceName\":\"Actor_8C091DB4\",\"OverrideReferenceName\":null,\"Hidden\":false,\"ShortGuid\":\"8C091DB4\"}"
+        }
+    ]
+}
